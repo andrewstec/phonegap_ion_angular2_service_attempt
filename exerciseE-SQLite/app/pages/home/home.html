@@ -1,0 +1,15 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Home
+    </ion-title>
+    <button clear (click)="add()">Add</button>
+    <button clear (click)="refresh()">Refresh</button>
+</ion-navbar>
+
+<ion-content class="home">
+    <ion-list>
+        <ion-item *ngFor="#person of people">
+            Yo: {{person}}
+        </ion-item>
+    </ion-list>
+</ion-content>
